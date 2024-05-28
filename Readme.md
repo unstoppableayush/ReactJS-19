@@ -19,7 +19,7 @@
     - Vite
     - Meta Frameworks(Next.js , Remix, Gatsby, e.t.c)
     
-## What to Learn Before React & 5 Tips to Maximize Your React Course
+# What to Learn Before React & 5 Tips to Maximize Your React Course
 
 - Prerequisite - `HTML, CSS, JAVASCRIPT`
 - **5 Tips**
@@ -27,3 +27,5 @@
     - Explore Additional Resources 
     - Apply Real-World Scenarios
     - Review and Revise
+
+# React Project Structure and Naming Conventions
