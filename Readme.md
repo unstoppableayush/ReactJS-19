@@ -29,3 +29,21 @@
     - Review and Revise
 
 # React Project Structure and Naming Conventions
+- Learned about Files and Folders Structure
+    - `node_modules` 
+    - `public `
+    - `src`
+    - `.eslintrc.cjs`
+    - `.gitignore`
+    - `index.html` 
+    - `package.json`
+    - vite.config.js
+
+- **Naming Conventions**
+
+# JSX (JavaScript XML) The Essential Building Block of React
+
+- What is JSX?
+- How JSX works?
+- React.createElement , React.element, Void Elements
+- How React works?
