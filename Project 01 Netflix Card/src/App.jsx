@@ -26,7 +26,21 @@ const NetflixSeries = () => {
     const genre = "RomCom"
     return genre;
   }
-  let age = 16;
+  let age = 18;
+
+  // Third Method -> You might have complex if conditions , for that there are some solutions
+
+  // let canWatch = "Not Available";
+  // if( age >= 18) canWatch = "Watch Now";
+
+  // Forth Method -> Prevents cluttering of variables outside and encapsulates such logic inside a function.
+  // One another benefit is also  that, you can also pass some dynamic values as function parameter.
+
+  const canWatch = () => {
+    if(age >= 18 ) return "Watch Now";
+    return "Not Available";
+  }
+
   return (
     <div>
       <div>
@@ -38,7 +52,7 @@ const NetflixSeries = () => {
         {summary}
       </p>
       <p>Genre: {returnGenre()}</p>
-      <button >{age >= 18 ? "Watch Now" : "Not Available"}</button>
+      <button >{canWatch()}</button>
     </div>
   );
 };
