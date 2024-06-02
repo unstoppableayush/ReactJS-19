@@ -26,7 +26,7 @@ const NetflixSeries = () => {
     const genre = "RomCom"
     return genre;
   }
-
+  let age = 16;
   return (
     <div>
       <div>
@@ -38,6 +38,7 @@ const NetflixSeries = () => {
         {summary}
       </p>
       <p>Genre: {returnGenre()}</p>
+      <button >{age >= 18 ? "Watch Now" : "Not Available"}</button>
     </div>
   );
 };
