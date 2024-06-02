@@ -26,3 +26,9 @@
                 return <h1>Hello, {name}</h1>
             }
           ```
+          
+###  Why can't we return multiple elements at the same time?
+
+- As after JSX is compiled it is converted to normal JavaScript object, you can't return multiple JavaScript object at the same time.
+
+- `return ( jsx(...), jsx(...))`

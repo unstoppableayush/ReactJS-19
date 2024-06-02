@@ -47,3 +47,52 @@
 - How JSX works?
 - React.createElement , React.element, Void Elements
 - How React works?
+
+## Components in React 
+
+- A component is essentially a `JavaScript function or class` that return JSX(JavaScript XML
+
+- There are two ways to create components in React.js:
+    - `Class Based Components`
+    - `Functional Components`
+
+## React Fragments: Remove unwanted Nodes & Speed Up Rendering
+
+- `return [<p>Ram</p>, <strong>20</strong>]; `
+
+- ```javascript
+    import {Fragment} from "react";
+    return <Fragment> //code </Fragment>
+  ```
+- Alternatively, you can also use its shorthand syntax:
+    - `<> //code </>`
+
+> Why can't we return multiple elements at the same time?
+
+- As after JSX is compiled it is converted to normal JavaScript object, you can't return multiple JavaScript object at the same time.
+
+- `return ( jsx(...), jsx(...))`
+
+## Dynamic Values in JSX: Injecting JavaScript into HTML
+
+You can add any variables of your component in JSX using {} syntax.
+- ```javascript
+    function MyComponent(){
+        const value = "Hey";
+        return <p>{value}</p>;
+    }
+    ```
+
+-  ```javascript
+    return <div>The result is: {1 + 2 + 3}</div>;
+    ```
+
+## React Conditional rendering in JSX 
+### Conditionals in JSX
+You can either return a JSX early or You can use ternary operatos for conditionals in JSX.
+
+- `return <p>{ age >= 18 ? "Adult " : "Minor"}</p>`
+
+- `return <p>{ age >= 18 && "You can vote"}</p>`
+
+- `return <p>{ username || "Guest"}</p>`
