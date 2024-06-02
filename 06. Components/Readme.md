@@ -16,7 +16,7 @@
                     return <h1>Hello, {this.props.name}</h1>;
                 }
             }
-         ```
+          ```
     - `Functional Components`
         - This is modern and recommended way of writing React.js components.
         - We will follow through functional components in this course as that's what is used.
@@ -25,4 +25,4 @@
             export function Welcome({name}){
                 return <h1>Hello, {name}</h1>
             }
-         ```
+          ```
