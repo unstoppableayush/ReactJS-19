@@ -48,7 +48,7 @@
 - React.createElement , React.element, Void Elements
 - How React works?
 
-## Components in React 
+# Components in React 
 
 - A component is essentially a `JavaScript function or class` that return JSX(JavaScript XML
 
@@ -56,7 +56,7 @@
     - `Class Based Components`
     - `Functional Components`
 
-## React Fragments: Remove unwanted Nodes & Speed Up Rendering
+# React Fragments: Remove unwanted Nodes & Speed Up Rendering
 
 - `return [<p>Ram</p>, <strong>20</strong>]; `
 
@@ -73,7 +73,7 @@
 
 - `return ( jsx(...), jsx(...))`
 
-## Dynamic Values in JSX: Injecting JavaScript into HTML
+# Dynamic Values in JSX: Injecting JavaScript into HTML
 
 You can add any variables of your component in JSX using {} syntax.
 - ```javascript
@@ -87,7 +87,7 @@ You can add any variables of your component in JSX using {} syntax.
     return <div>The result is: {1 + 2 + 3}</div>;
     ```
 
-## React Conditional rendering in JSX 
+# React Conditional rendering in JSX 
 ### Conditionals in JSX
 You can either return a JSX early or You can use ternary operatos for conditionals in JSX.
 
