@@ -1,4 +1,4 @@
-export const NetflixSeries = () => {
+const NetflixSeries = () => {
   const name = "Queen Of Tears";
   const summary =
     "Summary : Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias sapiente quidem cumque.";
@@ -22,7 +22,7 @@ export const NetflixSeries = () => {
   };
 
   return (
-    <div>
+    <>
       <div>
         <img src="queen.jpg" alt="" height="300px" width="500px" />
       </div>
@@ -31,12 +31,17 @@ export const NetflixSeries = () => {
       <p>{summary}</p>
       <p>Genre: {returnGenre()}</p>
       <button>{canWatch()}</button>
-    </div>
+    </>
   );
 };
 
-// export default NetflixSeries
+export default NetflixSeries;
 
 export const Footer = () => {
   return <p>Copyright @ Ayush</p>;
 };
+
+export const Header = () => {
+    return <h1>This is Header</h1>;
+  };
+  
