@@ -1,37 +1,26 @@
+import series  from "../api/series.json"
 const NetflixSeries = () => {
-  const name = "Queen Of Tears";
-  const summary =
-    "Summary : Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi alias sapiente quidem cumque.";
-  const returnGenre = () => {
-    const genre = "RomCom";
-    return genre;
-  };
-  let age = 18;
-
-  // Third Method -> You might have complex if conditions , for that there are some solutions
-
-  // let canWatch = "Not Available";
-  // if( age >= 18) canWatch = "Watch Now";
-
-  // Forth Method -> Prevents cluttering of variables outside and encapsulates such logic inside a function.
-  // One another benefit is also  that, you can also pass some dynamic values as function parameter.
-
-  const canWatch = () => {
-    if (age >= 18) return "Watch Now";
-    return "Not Available";
-  };
-
   return (
-    <>
-      <div>
-        <img src="queen.jpg" alt="" height="300px" width="500px" />
-      </div>
-      <h2>Name: {name}</h2>
-      <h3>Rating: {5 + 3.2}</h3>
-      <p>{summary}</p>
-      <p>Genre: {returnGenre()}</p>
-      <button>{canWatch()}</button>
-    </>
+    <ul>
+      {series.map((series) => {
+        return (
+          <li key={series.id}>
+          <div>
+            <img src="quejpgen." alt="" height="300px" width="500px" />
+          </div>
+          <h2>Name: {series.name}</h2>
+          <h3>Rating: {series.rating}</h3>
+          <p>Description: {series.description}</p>
+          <p>Cast: {series.cast.join(", ")}</p>
+          <p>Genre: {series.genre.join(", ")}</p>
+          <a href={series.watch_url} target="_blank">
+          <button>Watch Now</button>
+          </a>
+        </li>
+        )
+      })}
+   
+    </ul>
   );
 };
 
