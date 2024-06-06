@@ -93,3 +93,5 @@ You can either return a JSX early or You can use ternary operatos for conditiona
 1. Default Export and Import 
 2. Named Export and Import
 3. Mixed Export and Import
+
+# Looping in JSX: Netflix Series Card Creation
