@@ -1,22 +1,11 @@
-import series  from "../api/series.json"
+import seriesData  from "../api/series.json"
+import { SeriesCard } from "./SeriesCard";
 const NetflixSeries = () => {
   return (
     <ul>
-      {series.map((series) => {
+      {seriesData.map((series) => {
         return (
-          <li key={series.id}>
-          <div>
-            <img src="quejpgen." alt="" height="300px" width="500px" />
-          </div>
-          <h2>Name: {series.name}</h2>
-          <h3>Rating: {series.rating}</h3>
-          <p>Description: {series.description}</p>
-          <p>Cast: {series.cast.join(", ")}</p>
-          <p>Genre: {series.genre.join(", ")}</p>
-          <a href={series.watch_url} target="_blank">
-          <button>Watch Now</button>
-          </a>
-        </li>
+        <SeriesCard key={series.id} series={series}/>
         )
       })}
    
