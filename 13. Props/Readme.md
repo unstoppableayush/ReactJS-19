@@ -6,3 +6,4 @@
 - Child components access props throught thier `function parameter`.
 - You can also `pass JSX as props` to another component.
 
+- Props related chnages done in `Netflix Series card"
