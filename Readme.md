@@ -95,3 +95,4 @@ You can either return a JSX early or You can use ternary operatos for conditiona
 3. Mixed Export and Import
 
 # Looping in JSX: Netflix Series Card Creation
+- `.map()` function used to map the elements.
