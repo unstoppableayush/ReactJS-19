@@ -88,6 +88,10 @@ You can either return a JSX early or You can use ternary operatos for conditiona
 
 - `return <p>{ username || "Guest"}</p>`
 
+# React interview Question with Solutions
+
+- React does not render `false`, `null`, `undefined`, or `NaN` in the DOM.
+
 # React Import and Export 
 
 1. Default Export and Import 
@@ -96,3 +100,5 @@ You can either return a JSX early or You can use ternary operatos for conditiona
 
 # Looping in JSX: Netflix Series Card Creation
 - `.map()` function used to map the elements.
+
+# Props in React JS - Making Netflix Cards Reusable
