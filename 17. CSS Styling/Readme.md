@@ -1,4 +1,4 @@
-## Add CSS Styling in React: Class vs ClassName
+## Add CSS Styling in React: Class vs ClassName , Inline CSS Styling 
 
 - Inline styles are applied directly to the HTML Elmenets via the style attribute. 
 - This approach uses Javascript objects to define the CSS properties and values.
@@ -42,3 +42,14 @@ function MyButton(){
     return <button style={buttonStyle}>Click Me</button>;
 }
 ```
+
+## Conditional Styling for Dynamic UIs 
+
+- You can use ternary operator to add conditional styling to your css.
+
+- To use both conditional styling and normal css propery we use `Template Literals`.
+
+```javascript
+        <h3> Rating: <span className={`rating ${rating >= 8.5 ? "super_hit" : "average" }`}>{rating}</span>
+        </h3>
+````
