@@ -22,3 +22,10 @@ Challenge Details:
 
 // Dynamic Conent 
 - The personalized gretting message be a JSX element passed as a prop.
+
+
+### Solution
+
+- IF you are passing no in variable include in `{}` braces . `{20}`
+- We can also pass jsx as a props.
+- To get the Value Passed b/w starting and closing component , We use {props.children}
