@@ -37,12 +37,12 @@ export const SeriesCard = (props) => {
       <div>
         <img src={img_url} alt="" width="400px" />
       </div>
-      <div className={styles['card-content']}>
+      <div className="flex flex-col gap-6 py-[1.2rem] px-[1rem]">
         <h2>Name: {name}</h2>
         <h3>
           Rating: <span className={`${styles.rating}  ${ratingClass}`}>{rating}</span>
         </h3>
-        <p>Description: {description}</p>
+        <p className='text-3xl font-bold underline'>Description: {description}</p>
         <p>Cast: {props.series.cast.join(", ")}</p>
         <p>Genre: {props.series.genre.join(", ")}</p>
         <a href={props.series.watch_url} target="_blank">
