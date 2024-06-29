@@ -82,3 +82,15 @@ export const EventHandling = () => {
     );
 };
 ```
+
+# Passing Events as Props in React
+
+- Passing event handlers as props in React.js is a common pattern `used to allow child components to communicate with parent components.` This pattern is useful in various scenarios , including.
+
+    - *Form Handling* : Passing event handlers like onCHnage or onSubmit to form components allows the child components to update the form data and notify the parent component changes.
+
+    - *User Interaction* - Event handlers like onClick can be passed to interactive elements to trigger specific actions in the parent component, such as opening as modal or navigating to a different page.
+
+    - *State Management* - Event hanlders can be used to update state in the parent component which can then be passed down to child component as props to reflect the updated state.
+
+    - *Callback FUnctions*: Event hanldlers can be used as callback functiosn to handle asynchtonous operation or to update state based on the result of an operation.

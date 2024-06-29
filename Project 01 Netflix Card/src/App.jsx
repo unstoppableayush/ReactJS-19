@@ -2,6 +2,8 @@ import NetflixSeries, {Footer, Header} from "./components/NetflixSeries"
 // import "./components/Netflix.css"
 import './components/Netflix.module.css'
 import { EventHandling } from "./components/EventHandling"
+import { EventProps } from "./components/EventProps"
+import { EventPropagation } from "./components/EventPropagation"
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       {/* <h1 className="common-heading"> List of Best Netflix Series</h1> */}
       {/* <Header/> */}
       {/* <NetflixSeries/> */}
-      <EventHandling/>
+      {/* <EventHandling/> */}
+       {/* <EventProps/> */}
+       <EventPropagation/>
       {/* <Footer/> */}
     </section>
   )
