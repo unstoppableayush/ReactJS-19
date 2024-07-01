@@ -14,6 +14,12 @@ export const DerivedState = () => {
         { name: "Charlie", age: 45},
         { name: "Angles", age: 45},
     ])
+
+    // Derived State: count of users
+    const userCount = users.length;
+
+    // Derived State
+    const averageAge = users.reduce((accum, curElem) => accum + curElem.age, 0) / userCount;
     return (
         <div className="">
             <h1>Users List</h1>
@@ -27,7 +33,10 @@ export const DerivedState = () => {
                         </>
                     })
                 }
+                <li>Total Users: {userCount}</li>
+                <li>Average Age: {averageAge}</li>
             </ul>
+
         </div>
     )
 }
