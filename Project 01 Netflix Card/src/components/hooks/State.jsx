@@ -13,6 +13,7 @@ export const State = () => {
         setCount( () => count + 1)
     }
     console.log(count)
+    console.log("Parent Component rendered")
 
     return (
         <>
@@ -20,9 +21,18 @@ export const State = () => {
         <h1>{count}</h1>
         <button onClick={handleButtonClick}>Increment</button>
         </section>
+        <ChildComp count={count}/>
         </>
     )
 }
+
+function ChildComp({count}){
+    console.log("Child Component rendered")
+    return <div className="main-div">
+            <h2>Child Component-{count}</h2>
+           </div>
+}
+
 
 /**
  * It's beacuse those are normal variables and React.js doesn't know that it's going to be changed.

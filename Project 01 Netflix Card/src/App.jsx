@@ -17,6 +17,7 @@ function App() {
        {/* <EventProps/> */}
        {/* <EventPropagation/> */}
        <State/>
+       <ParentSibling/>
       {/* <Footer/> */}
     </section>
   )
@@ -24,4 +25,10 @@ function App() {
 
 export default App
 
+export function ParentSibling(){
+  console.log("ParentSibling Component rendered")
+  return <div className="main-div">
+          <h2>ParentSibling Component</h2>
+         </div>
+}
 
