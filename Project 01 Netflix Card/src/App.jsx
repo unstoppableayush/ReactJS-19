@@ -5,6 +5,7 @@ import { EventHandling } from "./components/EventHandling"
 import { EventProps } from "./components/EventProps"
 import { EventPropagation } from "./components/EventPropagation"
 import { State } from "./components/hooks/State"
+import { DerivedState } from "./components/DerivedState"
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
       {/* <EventHandling/> */}
        {/* <EventProps/> */}
        {/* <EventPropagation/> */}
-       <State/>
-       <ParentSibling/>
+       {/* <State/> */}
+       {/* <ParentSibling/> */}
+       <DerivedState/>
       {/* <Footer/> */}
     </section>
   )
