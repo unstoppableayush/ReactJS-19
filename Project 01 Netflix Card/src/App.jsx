@@ -6,6 +6,7 @@ import { EventProps } from "./components/EventProps"
 import { EventPropagation } from "./components/EventPropagation"
 import { State } from "./components/hooks/State"
 import { DerivedState } from "./components/DerivedState"
+import { LiftingState } from "./components/LiftStateUp"
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
        {/* <EventPropagation/> */}
        {/* <State/> */}
        {/* <ParentSibling/> */}
-       <DerivedState/>
+       {/* <DerivedState/> */}
+        <LiftingState/>
       {/* <Footer/> */}
     </section>
   )
